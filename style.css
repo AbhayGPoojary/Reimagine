@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    background: url(assets/background.png);
+    display: grid;
+    grid-template-rows: 150px 275px auto;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+
+.nav{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    background: transparent;
+    background: linear-gradient(180deg,rgba(0, 0, 0, 0.408),rgba(255, 255, 255, 0));
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    grid-area:1/1/1/3;
+    z-index: 1;
+}
+.logo{
+    width: 20%;
+    height: 150px;
+}
+.logo img{
+    width: 250px;
+    height: 150px;
+}
+.nav-links{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 20px;  
+}
+.nav-links li,a{
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    font-size: x-large;
+    font-weight: 500;
+}
+form {
+    background-color: #ef1c2361;
+    width: 200px;
+    height: 44px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+input {
+    all: unset;
+    font: 16px system-ui;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+}
+::placeholder {
+    color: #fff;
+    opacity: 0.7; 
+}
+svg {
+    color: #fff;
+    fill: currentColor;
+    width: 24px;
+    height: 24px;
+    padding: 10px;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    grid-area: 2/1/4/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 50px;
+}
+.container h1{
+    font-size: 72px;
+    background: -webkit-linear-gradient(0,#4894ff,white,#94daff,#ffffff,#97c1fb,#ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.container p{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.gif{
+    grid-area: 1/2/3/3;
+    z-index: 0;
+}
+
+.gif img{
+    height: 425px;
+    width: 780px;
+}
+.gif2{
+    grid-area: 3/2/4/3;
+}
+.gif2 img{
+    width: 100%;
+    height: 270px;
+}
+
+/* fskdfgugidfghfig */
+
+.products{
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.pro-container{
+    width: 97%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.header h1 {
+    color: #EF1C23;
+    font-size: 3rem;
+}
+
+.header p {
+    color: rgb(170, 45, 72);
+    margin: 10px 0 30px;
+    font-size: 20px;
+}
+
+.carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.product-cards {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 0 10px;
+    flex: 0 0 auto;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+.badge {
+    background-color: #EF1C23;
+    color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.product-info {
+    padding: 20px;
+    background-color: #EF1C23;
+    background: linear-gradient(0,rgb(170, 45, 72),#EF1C23,#d42e6e);
+    color: #fff;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.product-info h3 {
+    font-size: 30px;
+    margin: 0;
+    color: rgb(255, 255, 255);
+}
+
+.navi {
+    background-color: #EF1C23;
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.navi.left {
+    left: -80px;
+}
+
+.navi.right {
+    right: -80px;
+}
+
+.pagination {
+    margin-top: 20px;
+}
+
+.pagination span {
+    color: #EF1C23;
+    font-size: 18px;
+}
+
